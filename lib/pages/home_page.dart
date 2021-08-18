@@ -1,3 +1,4 @@
+import 'package:dragon_ball_app_ui/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,13 +13,14 @@ class HomePage extends StatelessWidget {
         height: size.height,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/background.jpeg'),
+            image: AssetImage('assets/background.png'),
             fit: BoxFit.cover,
           ),
         ),
-        child: const SafeArea(
-          child: Text('Hola'),
-        ),
+        child: SafeArea(
+            child: Column(
+          children: const [CustomAppBar()],
+        )),
       ),
     );
   }
