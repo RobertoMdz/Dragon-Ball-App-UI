@@ -35,6 +35,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  lint: ^1.5.3
 
 # The following section is specific to Flutter.
 flutter:

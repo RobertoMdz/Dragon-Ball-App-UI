@@ -1,0 +1,13 @@
+include: package:lint/analysis_options.yaml
+linter:
+  rules:
+    sort_pub_dependencies: false
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mocks.dart"
