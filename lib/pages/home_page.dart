@@ -20,10 +20,20 @@ class HomePage extends StatelessWidget {
         ),
         child: SafeArea(
           child: Column(
-            children: const [
-              CustomAppBar(),
-              SizedBox(height: 15),
-              CharacterDetail()
+            children: [
+              const CustomAppBar(),
+              const CharacterDetail(),
+              Expanded(
+                child: Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(30),
+                      topLeft: Radius.circular(30),
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),

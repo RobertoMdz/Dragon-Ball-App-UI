@@ -6,14 +6,14 @@ class CharacterDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        height: MediaQuery.of(context).size.height / 1.8,
         margin: const EdgeInsets.symmetric(horizontal: 25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Align(
               child: Image(
-                width: 270,
-                height: 270,
+                height: 280,
                 image: AssetImage('assets/goku.png'),
               ),
             ),
@@ -36,10 +36,11 @@ class CharacterDetail extends StatelessWidget {
             Text(
               'Some character description, this text is only for purposes',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 17,
                 fontWeight: FontWeight.w500,
                 color: Colors.white,
               ),
+              maxLines: 3,
             ),
           ],
         ));
