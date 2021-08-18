@@ -26,12 +26,13 @@ class CustomAppBar extends StatelessWidget {
             height: 60,
           ),
           const CircleAvatar(
-              backgroundColor: Colors.purple,
-              child: Image(
-                width: 30,
-                height: 30,
-                image: AssetImage('assets/avatar.png'),
-              ))
+            backgroundColor: Colors.purple,
+            child: Image(
+              width: 30,
+              height: 30,
+              image: AssetImage('assets/avatar.png'),
+            ),
+          )
         ],
       ),
     );

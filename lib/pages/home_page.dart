@@ -1,3 +1,4 @@
+import 'package:dragon_ball_app_ui/widgets/character_detail.dart';
 import 'package:dragon_ball_app_ui/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +19,14 @@ class HomePage extends StatelessWidget {
           ),
         ),
         child: SafeArea(
-            child: Column(
-          children: const [CustomAppBar()],
-        )),
+          child: Column(
+            children: const [
+              CustomAppBar(),
+              SizedBox(height: 15),
+              CharacterDetail()
+            ],
+          ),
+        ),
       ),
     );
   }
