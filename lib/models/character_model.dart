@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:meta/meta.dart';
 
 class CharacterModel extends Equatable {
   final String id;
@@ -8,15 +9,15 @@ class CharacterModel extends Equatable {
   final String imgPath;
 
   const CharacterModel({
-    required this.id,
-    required this.race,
-    required this.name,
-    required this.bio,
-    required this.imgPath,
+    @required this.id,
+    @required this.race,
+    @required this.name,
+    @required this.bio,
+    @required this.imgPath,
   });
 
   @override
-  List<Object?> get props => [];
+  List<Object> get props => [];
 
   static List<CharacterModel> getCharacters() {
     return const [

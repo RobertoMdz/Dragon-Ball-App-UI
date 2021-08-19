@@ -4,7 +4,7 @@ import '../models/character_model.dart';
 
 class CharacterCard extends StatelessWidget {
   final CharacterModel character;
-  const CharacterCard({Key? key, required this.character}) : super(key: key);
+  const CharacterCard({Key key, @required this.character}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

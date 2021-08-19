@@ -1,8 +1,10 @@
+import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
+  final GlobalKey<SwipeDrawerState> drawerKey;
+  const CustomAppBar({Key key, @required this.drawerKey}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,13 @@ class CustomAppBar extends StatelessWidget {
               width: 35,
               height: 35,
             ),
-            onPressed: () {},
+            onPressed: () {
+              if (drawerKey.currentState.isOpened()) {
+                drawerKey.currentState.closeDrawer();
+              } else {
+                drawerKey.currentState.openDrawer();
+              }
+            },
           ),
           const Image(
             image: AssetImage('assets/logo.png'),

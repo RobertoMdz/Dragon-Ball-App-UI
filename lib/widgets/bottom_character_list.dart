@@ -1,10 +1,11 @@
+import 'package:dragon_ball_app_ui/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 import '../models/character_model.dart';
 import 'character_card.dart';
 
 class BottomCharacterList extends StatelessWidget {
-  const BottomCharacterList({Key? key}) : super(key: key);
+  const BottomCharacterList({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class BottomCharacterList extends StatelessWidget {
                 },
               ),
             ),
-            OutlinedButton(onPressed: () {}, child: Text('VER MAS'))
+            CustomElevatedButton(onPressed: () {})
           ],
         ),
       ),

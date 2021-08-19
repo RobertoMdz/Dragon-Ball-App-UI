@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CharacterDetail extends StatelessWidget {
-  const CharacterDetail({Key? key}) : super(key: key);
+  const CharacterDetail({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
