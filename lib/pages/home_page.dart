@@ -1,3 +1,4 @@
+import 'package:dragon_ball_app_ui/contants.dart';
 import 'package:dragon_ball_app_ui/widgets/custom_drawer_menu.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var drawerKey = GlobalKey<SwipeDrawerState>();
+  final drawerKey = GlobalKey<SwipeDrawerState>();
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class _HomePageState extends State<HomePage> {
         radius: 25,
         key: drawerKey,
         bodyBackgroundPeekSize: -20,
-        backgroundColor: const Color.fromRGBO(239, 78, 16, 1),
+        backgroundColor: orangeColor,
         drawer: const CustomDrawerMenu(),
         child: Container(
           width: size.width,

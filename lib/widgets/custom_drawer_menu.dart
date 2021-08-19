@@ -1,3 +1,4 @@
+import 'package:dragon_ball_app_ui/contants.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawerMenu extends StatelessWidget {
@@ -21,7 +22,7 @@ class CustomDrawerMenu extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: const CircleAvatar(
               radius: 30,
-              backgroundColor: Colors.purple,
+              backgroundColor: purpleColor,
               child: Image(
                 width: 40,
                 height: 40,
@@ -51,11 +52,12 @@ class CustomDrawerMenu extends StatelessWidget {
 
   Widget _buildListTile(String title) {
     return ListTile(
+      onTap: () {},
       visualDensity: VisualDensity.compact,
       horizontalTitleGap: 0,
       leading: const Icon(
         Icons.stars_rounded,
-        color: Color.fromRGBO(196, 151, 19, 1),
+        color: yellowColor,
         size: 30,
       ),
       title: Text(title),

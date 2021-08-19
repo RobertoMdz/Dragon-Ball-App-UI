@@ -1,3 +1,4 @@
+import 'package:dragon_ball_app_ui/contants.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -34,7 +35,7 @@ class CustomAppBar extends StatelessWidget {
             height: 60,
           ),
           const CircleAvatar(
-            backgroundColor: Colors.purple,
+            backgroundColor: purpleColor,
             child: Image(
               width: 30,
               height: 30,
