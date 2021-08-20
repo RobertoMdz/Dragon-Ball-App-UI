@@ -1,3 +1,4 @@
+import 'package:dragon_ball_app_ui/widgets/characters_grid_view.dart';
 import 'package:dragon_ball_app_ui/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
@@ -32,14 +33,37 @@ class BottomCharacterList extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 physics: const BouncingScrollPhysics(),
                 itemBuilder: (context, index) {
-                  return CharacterCard(character: characters[index]);
+                  return Row(
+                    children: [
+                      CharacterCard(character: characters[index]),
+                      const SizedBox(width: 10)
+                    ],
+                  );
                 },
               ),
             ),
-            CustomElevatedButton(onPressed: () {})
+            CustomElevatedButton(
+              onPressed: () {
+                _showModalBottomSheet(context);
+              },
+            )
           ],
         ),
       ),
+    );
+  }
+
+  void _showModalBottomSheet(BuildContext context) {
+    showModalBottomSheet<dynamic>(
+      context: context,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(25),
+          topRight: Radius.circular(25),
+        ),
+      ),
+      builder: (_) => const CharactersGridView(),
     );
   }
 }

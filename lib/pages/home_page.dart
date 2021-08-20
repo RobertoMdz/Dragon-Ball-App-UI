@@ -1,11 +1,11 @@
-import 'package:dragon_ball_app_ui/contants.dart';
-import 'package:dragon_ball_app_ui/widgets/custom_drawer_menu.dart';
 import 'package:drawer_swipe/drawer_swipe.dart';
 import 'package:flutter/material.dart';
 
+import '../contants.dart';
 import '../widgets/bottom_character_list.dart';
 import '../widgets/character_detail.dart';
 import '../widgets/custom_app_bar.dart';
+import '../widgets/custom_drawer_menu.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
