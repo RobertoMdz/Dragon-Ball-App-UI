@@ -9,8 +9,18 @@ This app show a list of Dragon Ball characters
 3. [hooks_riverpod](https://pub.dev/packages/hooks_riverpod)
 
 ## App screens
-<img src="https://i.postimg.cc/90Dc1RNP/Captura-de-Pantalla-2021-08-24-a-la-s-13-46-57.png" width="200" height="400" />
-<img src="https://i.postimg.cc/1t5mnYGj/Captura-de-Pantalla-2021-08-24-a-la-s-13-47-54.png" width="200" height="400" />
+<p float="left">
+  <img src="https://i.postimg.cc/90Dc1RNP/Captura-de-Pantalla-2021-08-24-a-la-s-13-46-57.png" 
+  width="200" 
+  height="400" />
+  <img src="https://i.postimg.cc/1t5mnYGj/Captura-de-Pantalla-2021-08-24-a-la-s-13-47-54.png" 
+  width="200" 
+  height="400" />
+  <img src="https://i.postimg.cc/W3W2M6Sb/Captura-de-Pantalla-2021-08-24-a-la-s-13-48-22.png" 
+  width="200" 
+  height="400" />
+</p>
+
 
 
 This project is a starting point for a Flutter application.
