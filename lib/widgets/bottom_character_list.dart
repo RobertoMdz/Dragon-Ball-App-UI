@@ -1,16 +1,16 @@
-import 'package:dragon_ball_app_ui/widgets/characters_grid_view.dart';
-import 'package:dragon_ball_app_ui/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 import '../models/character_model.dart';
 import 'character_card.dart';
+import 'characters_grid_view.dart';
+import 'custom_elevated_button.dart';
 
 class BottomCharacterList extends StatelessWidget {
   const BottomCharacterList({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final characters = CharacterModel.getCharacters().take(6).toList();
+    final characters = CharacterModel.getCharacters().getRange(1, 7).toList();
     return Expanded(
       child: Container(
         padding: const EdgeInsets.only(top: 10),
