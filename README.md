@@ -10,6 +10,7 @@ This app show a list of Dragon Ball characters
 
 ## App screens
 <img src="https://i.postimg.cc/90Dc1RNP/Captura-de-Pantalla-2021-08-24-a-la-s-13-46-57.png" width="200" height="400" />
+<img src="https://i.postimg.cc/1t5mnYGj/Captura-de-Pantalla-2021-08-24-a-la-s-13-47-54.png" width="200" height="400" />
 
 
 This project is a starting point for a Flutter application.
