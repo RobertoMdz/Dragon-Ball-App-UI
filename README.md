@@ -21,3 +21,7 @@ The application shows a list of characters from the famous dragon ball z anime, 
   height="400" />
 </p>
 
+## Fonts
+1. [BebasNeue](https://fonts.google.com/specimen/Bebas+Neue)
+
+
