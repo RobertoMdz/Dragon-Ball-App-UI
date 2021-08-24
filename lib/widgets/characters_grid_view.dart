@@ -12,7 +12,7 @@ class CharactersGridView extends StatelessWidget {
     return Container(
       height: 500,
       color: Colors.transparent,
-      padding: EdgeInsets.only(top: 30),
+      padding: const EdgeInsets.only(top: 30),
       child: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: GridView.count(

@@ -13,9 +13,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Dragon Ball App',
         theme: ThemeData(
+          fontFamily: 'BebasNeue',
           primarySwatch: Colors.blue,
         ),
-        home: const HomePage(),
+        home: HomePage(),
       ),
     );
   }
