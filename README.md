@@ -1,8 +1,16 @@
 # dragon_ball_app_ui
 
-A new Flutter project.
+This app show a list of Dragon Ball characters
 
-## Getting Started
+## Used packages
+1. [drawer_swipe](https://pub.dev/packages/drawer_swipe/install)
+2. [equatable](https://pub.dev/packages/equatable)
+3. [flutter_hooks](https://pub.dev/packages/flutter_hooks)
+3. [hooks_riverpod](https://pub.dev/packages/hooks_riverpod)
+
+## App screens
+<img src="https://i.postimg.cc/90Dc1RNP/Captura-de-Pantalla-2021-08-24-a-la-s-13-46-57.png" width="200" height="400" />
+
 
 This project is a starting point for a Flutter application.
 
