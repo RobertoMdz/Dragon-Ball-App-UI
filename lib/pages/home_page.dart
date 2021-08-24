@@ -25,12 +25,7 @@ class HomePage extends HookWidget {
         child: Container(
           width: size.width,
           height: size.height,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/background.png'),
-              fit: BoxFit.cover,
-            ),
-          ),
+          decoration: _buildBackgroundDecoration(),
           child: SafeArea(
             child: Column(
               children: [
@@ -41,6 +36,15 @@ class HomePage extends HookWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Decoration _buildBackgroundDecoration() {
+    return const BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage('assets/background.png'),
+        fit: BoxFit.cover,
       ),
     );
   }
