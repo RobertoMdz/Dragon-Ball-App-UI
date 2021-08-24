@@ -1,5 +1,6 @@
-import 'package:dragon_ball_app_ui/contants.dart';
 import 'package:flutter/material.dart';
+
+import '../contants.dart';
 
 class CustomDrawerMenu extends StatelessWidget {
   const CustomDrawerMenu({Key key}) : super(key: key);

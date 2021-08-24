@@ -1,6 +1,7 @@
-import 'package:dragon_ball_app_ui/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import 'pages/home_page.dart';
 
 void main() {
   runApp(MyApp());
